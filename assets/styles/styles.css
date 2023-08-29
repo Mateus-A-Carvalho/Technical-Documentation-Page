@@ -1,22 +1,24 @@
 :root {
   --body-font-size: 62.5%;
   --border-gradient: linear-gradient(
-    to right, 
+    75deg, 
     rgba(148, 0, 211, 1),
     rgba(75, 0, 130, 1), 
     rgba(0, 0, 255, 1), 
-    rgba(0, 255, 0, 1), 
-    rgba(255, 255, 0, 1), 
+    /* rgba(0, 255, 0, 1),  */
+    /* rgba(255, 255, 0, 1),  */
     rgba(255, 127, 0, 1), 
     rgba(255, 0, 0, 1)
     );
   --main-bg: rgba(207, 207, 207);
+  --aside-bg: rgba(143, 143, 143, 1);
+
 
 /* 
 
 .My-Color-Theme-1-rgba { color: rgba(143, 143, 143, 1); }
 .My-Color-Theme-2-rgba { color: rgba(79, 79, 79, 1); }
-.My-Color-Theme-3-rgba { color: rgba(207, 207, 207, 1); }
+.My-Color-Theme-3-rgba - main-bg { color: rgba(207, 207, 207, 1); }
 .My-Color-Theme-4-rgba { color: rgba(219, 219, 219, 1); }
 .My-Color-Theme-5-rgba { color: rgba(181, 181, 181, 1); }
  */
@@ -48,14 +50,22 @@ body {
 aside.aside {
   position: fixed;
   left: 0;
+  background-color: var(--aside-bg);
+  width: 20%;
+  height: 100vh;
+  z-index: 2;
 }
 
 .main-heading {
   font-size: 2em;
-  margin: 0 auto;
+  margin: 1rem auto;
   text-align: center;
   border: 1rem solid;
   padding: 1rem;
   border-image-slice: 1;
   border-image-source: var(--border-gradient);
+}
+
+section.first-section {
+  background-color: rgba(219, 219, 219, 1);
 }
