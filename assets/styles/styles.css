@@ -11,7 +11,7 @@
     rgba(255, 0, 0, 1)
     );
   --main-bg: rgba(207, 207, 207);
-  --aside-bg: rgba(143, 143, 143, 1);
+  --aside-bg: rgba(2, 29, 82, 1);
 
 
 /* 
@@ -40,16 +40,20 @@ body {
   height: 100%;
   font-size: 1.8rem;
   background-color: var(--main-bg);
+  display: grid;
 }
 
-.main-content {
+#main-content {
+  
   max-width: 120rem;
   margin: 0 auto;
 }
 
 aside.aside {
+  display: none;
   position: fixed;
   left: 0;
+  top: 0;
   background-color: var(--aside-bg);
   width: 20%;
   height: 100vh;
