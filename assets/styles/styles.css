@@ -40,11 +40,16 @@ body {
   height: 100%;
   font-size: 1.8rem;
   background-color: var(--main-bg);
-  display: grid;
+  
 }
 
-#main-content {
-  
+section.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 10vh 70vh 20vh;
+}
+
+.main-content {
   max-width: 120rem;
   margin: 0 auto;
 }
