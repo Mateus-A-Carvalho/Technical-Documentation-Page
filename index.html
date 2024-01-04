@@ -23,10 +23,11 @@
 
   <main class="main" id="main-doc">
 
+    <!-- Section One -->
     <section id="header_text" class="main-section">
 
       <header>
-        <h1 id="brief_history" class="heading-section">A Brief History</h1>
+        A Brief History
       </header>
 
       <article class="article">
@@ -75,127 +76,53 @@
       </article>
     </section>
 
+    <!-- Section Two -->
     <section id="header_text" class="main-section">
       <header>
-        <h1 id="Grammar_and_types" class="heading-section">Grammar and types</h1>
+        A "Hello world!" example
       </header>
+
       <article>
-
-        <h2 class="sub-heading__section">Basic</h2>
-
-        <p class="paragraph">
-          This section discusses JavaScript's basic grammar, variable declarations, data types and literals.
-        </p>
-
-        <p class="paragraph">
-          JavaScript is <strong>case-sensitive</strong> and uses the <strong>Unicode</strong> character set. For example, the word Früh (which means "early" in German) could be used as a variable name.
-        </p>
-
-        <code class="code">
-          const Früh = "foobar";
-        </code>
         
         <p class="paragraph">
-          But, the variable <code>früh</code> is not the same as <code>Früh</code> because JavaScript is case sensitive.
-        </p>
-        
-        <p class="paragraph">
-          In JavaScript, instructions are called <span title="A statement is a line of code commanding a task." class="title">statements</span> and are separated by semicolons (;).
-        </p>
-        
-        <p class="paragraph">
-          A semicolon is not necessary after a statement if it is written on its own line. But if more than one statement on a line is desired, then they <em>must</em> be separated by <strong>semicolons</strong>.
-        </p>
-
-        <h2 class="sub-heading__section">Comments</h2>
-
-        <p class="paragraph">
-          The syntax of <strong>comments</strong> is the same as in C++ and in many other languages:
-        </p>
-
-        <code class="code block">
-          // a one line comment <br>
-          /* this is a longer,
-          * multi-line comment
-          */
-        </code>
-
-        <p class="paragraph">
-          You can't nest block comments. This often happens when you accidentally include a */ sequence in your comment, which will terminate the comment.
-        </p>
-
-        <h2 class="sub-heading__section">Declarations</h2>
-
-        <p class="paragraph">
-          JavaScript has three kinds of variable declarations.
-        </p>
-
-        <ul class="list variables">
-          
-          <li class="variable-names">
-            <strong>var: </strong>Declares a variable, optionally initializing it to a value.
-          </li>
-
-          <li class="variable-names">
-            <strong>let: </strong>Declares a block-scoped, local variable, optionally initializing it to a value.
-          </li>
-
-          <li class="variable-names">
-            <strong>const: </strong>Declares a block-scoped, read-only named constant.
-          </li>
-
-        </ul>
-
-        <h2 class="sub-heading__section">Variables</h2>
-
-        <p class="paragraph">
-          You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+          JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites will enter a new dimension of power and creativity.
         </p>
 
         <p class="paragraph">
-          A JavaScript identifier usually starts with a letter, underscore (_), or dollar sign ($). Subsequent characters can also be digits (0 – 9). Because JavaScript is case sensitive, letters include the characters A through Z (uppercase) as well as a through z (lowercase).
-        </p>
+          However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript to your page for creating a Hello world! example. (Hello world! is the <a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">standard for introductory programming examples.</a>)
+        </p>        
 
-        <p class="paragraph">
-          You can use most Unicode letters such as å and ü in identifiers. (For more details, see the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#string_literals">lexical grammar</a> reference.) You can also use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#identifiers">Unicode escape sequences</a> to represent characters in identifiers.
-        </p>
+        <ol class="list">
 
-        <p class="paragraph">
-          Some examples of legal names are :
-        </p>
-
-        <ul class="list">
-
-          <li class="list__item">
-            <code>Number_hits</code>
+          <li class="list__Item">
+            Go to your test site and create a new folder named scripts. Within the <code class="inline-code">scripts</code> folder, create a new text document called <code>main.js</code>, and save it.
           </li>
 
-          <li class="list__item">
-            <code>temp99</code>
+          <li class="list__Item">
+            In your index.html file, enter this code on a new line, just before the closing &lt;body&gt; tag:
+            <code class="block-code">
+              &lt;script src="scripts/main.js"&gt;&lt;/script&gt;
+            </code>
           </li>
 
-          <li class="list__item">
-            <code>$credit</code>
+          <li class="list__Item">
+            This is doing the same job as the &lt;link&gt; element for CSS. It applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).
           </li>
 
-          <li class="list__item">
-            <code>_name</code>
+          <li class="list__Item">
+            Add this code to the <code class="inline-code">main.js</code> file:
+            <code>
+              const myHeading = document.querySelector("h1");
+              myHeading.textContent = "Hello world!";
+            </code>
           </li>
 
-        </ul>
-
-
-
-        <!-- <ul class="list">
-
-          <li class="list__item">
-            Basic grammar and how to declare a variable
+          <li class="list__Item">
+            Make sure the HTML and JavaScript files are saved. Then load <code class="inline-code">index.html</code> in your browser. You should see something like this:
           </li>
-          <li class="list__item">
-            How to do one-line comment and multi-line comment
-          </li>
+        </ol>
 
-        </ul> -->
+        <img src="./assets/img/hello-world-img.jpg" alt="">
 
       </article>
     </section>
