@@ -178,14 +178,36 @@
 
     </section>
 
+    <!-- Section Five -->
     <section id="header_text" class="main-section">
-      <header></header>
-      <p></p>
-      <p></p>
-      <code></code>
-      <li>
-        <a href="" class="nav-link"></a>
-      </li>
+      <header>
+        <h1 class="main-heading-section">Declaring variables</h1>
+      </header>
+
+      <p class="paragraph">
+        You can declare a variable in two ways:
+      </p>
+
+      <ul class="list">
+
+        <li class="list__item">
+          With the keyword <strong>var</strong>. For example, <code class="inline-code">var x = 42</code>. This syntax can be used to declare both local and global variables, depending on the execution context.
+        </li>
+
+        <li class="list__item">
+          With the keyword <strong>const</strong> or <strong>let</strong>. For example, <code class="inline-code">let y = 13</code>. This syntax can be used to declare a block-scope local variable. (See <a href="">Variable scope</a> below.)
+        </li>
+
+      </ul>
+
+      <p class="paragraph">
+        You can declare variables to unpack values using the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">destructuring assignment</a> syntax. For example, <code class="inline-code">const { bar } = foo</code>. This will create a variable named bar and assign to it the value corresponding to the key of the same name from our object <code class="inline-code">foo</code>.
+      </p>
+
+      <p class="paragraph">
+        Variables should always be declared before they are used. JavaScript used to allow assigning to undeclared variables, which creates an undeclared global variable. This is an error in strict mode and should be avoided altogether.
+      </p>
+
     </section>
 
   </main>
