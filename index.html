@@ -27,7 +27,7 @@
     <section id="header_text" class="main-section">
 
       <header>
-        A Brief History
+        <h1 class="main-section-heading">A Brief History</h1>
       </header>
 
       <article class="article">
@@ -79,7 +79,7 @@
     <!-- Section Two -->
     <section id="header_text" class="main-section">
       <header>
-        A "Hello world!" example
+        <h1 class="main-section-heading">A "Hello world!" example</h1>
       </header>
 
       <article>
@@ -127,24 +127,55 @@
       </article>
     </section>
 
+    <!-- Section Three -->
     <section id="header_text" class="main-section">
-      <header></header>
-      <p></p>
-      <p></p>
-      <code></code>
-      <li>
-        <a href="" class="nav-link"></a>
-      </li>
-    </section>
 
+      <header>
+        <h1 class="main-header-section">What happened?</h1>
+      </header>
+
+      <p class="paragraph">
+        The heading text changed to <em>Hello world!</em> using JavaScript. You did this by using a function called <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">querySelector()</a> to grab a reference to your heading, and then store it in a variable called <code class="inline-code">myHeading</code>. This is similar to what we did using CSS selectors. When you want to do something to an element, you need to select it first.
+      </p>
+
+      <p class="paragraph">
+        Following that, the code set the value of the <code class="inline-code">myHeading</code> variable's textContent property (which represents the content of the heading) to Hello world!.
+      </p>
+
+    </section>
+      
+    <!-- Section Four -->
     <section id="header_text" class="main-section">
-      <header></header>
-      <p></p>
-      <p></p>
-      <code></code>
-      <li>
-        <a href="" class="nav-link"></a>
-      </li>
+
+      <header>
+        <h1 class="main-heading-section">Variables</h1>
+      </header>
+
+      <p class="paragraph">
+        You use variables as symbolic names for values in your application. The names of variables, called <a href="https://developer.mozilla.org/en-US/docs/Glossary/Identifier">identifiers</a>, conform to certain rules.
+      </p>
+
+      <p class="paragraph">
+        A JavaScript identifier usually starts with a letter, underscore (<code class="inline-code">_</code>), or dollar sign (<code class="inline-code">$</code>). Subsequent characters can also be digits (<code class="inline-code">0</code> – <code class="inline-code">9</code>). Because JavaScript is case sensitive, letters include the characters <code class="inline-code">A</code> through <code class="inline-code">Z</code> (uppercase) as well as <code class="inline-code">a</code> through <code class="inline-code">z</code> (lowercase).
+      </p>
+
+      <p class="paragraph">
+        You can use most Unicode letters such as <code class="inline-code">å</code> and <code class="inline-code">ü</code> in identifiers. (For more details, see the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#identifiers">lexical grammar</a> reference.) You can also use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#string_literals">Unicode escape sequences</a> to represent characters in identifiers.
+      </p>
+
+      <p class="paragraph">
+        Some examples of legal names are:
+      </p>
+
+      <ul class="list">
+
+        <li class="list__item"><code class="inline-code">Number_hits</code></li>
+        <li class="list__item"><code class="inline-code">temp99</code></li>
+        <li class="list__item"><code class="inline-code">$credit</code></li>
+        <li class="list__item"><code class="inline-code">_name</code></li>
+        
+      </ul>
+
     </section>
 
     <section id="header_text" class="main-section">
