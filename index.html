@@ -27,7 +27,7 @@
     <section id="header_text" class="main-section">
 
       <header>
-        A Brief History
+        <h1 class="main-section-heading">A Brief History</h1>
       </header>
 
       <article class="article">
@@ -79,7 +79,7 @@
     <!-- Section Two -->
     <section id="header_text" class="main-section">
       <header>
-        A "Hello world!" example
+        <h1 class="main-section-heading">A "Hello world!" example</h1>
       </header>
 
       <article>
@@ -127,34 +127,116 @@
       </article>
     </section>
 
+    <!-- Section Three -->
     <section id="header_text" class="main-section">
-      <header></header>
-      <p></p>
-      <p></p>
-      <code></code>
-      <li>
-        <a href="" class="nav-link"></a>
-      </li>
+
+      <header>
+        <h1 class="main-header-section">What happened?</h1>
+      </header>
+
+      <p class="paragraph">
+        The heading text changed to <em>Hello world!</em> using JavaScript. You did this by using a function called <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">querySelector()</a> to grab a reference to your heading, and then store it in a variable called <code class="inline-code">myHeading</code>. This is similar to what we did using CSS selectors. When you want to do something to an element, you need to select it first.
+      </p>
+
+      <p class="paragraph">
+        Following that, the code set the value of the <code class="inline-code">myHeading</code> variable's textContent property (which represents the content of the heading) to Hello world!.
+      </p>
+
+    </section>
+      
+    <!-- Section Four -->
+    <section id="header_text" class="main-section">
+
+      <header>
+        <h1 class="main-heading-section">Variables</h1>
+      </header>
+
+      <p class="paragraph">
+        You use variables as symbolic names for values in your application. The names of variables, called <a href="https://developer.mozilla.org/en-US/docs/Glossary/Identifier">identifiers</a>, conform to certain rules.
+      </p>
+
+      <p class="paragraph">
+        A JavaScript identifier usually starts with a letter, underscore (<code class="inline-code">_</code>), or dollar sign (<code class="inline-code">$</code>). Subsequent characters can also be digits (<code class="inline-code">0</code> – <code class="inline-code">9</code>). Because JavaScript is case sensitive, letters include the characters <code class="inline-code">A</code> through <code class="inline-code">Z</code> (uppercase) as well as <code class="inline-code">a</code> through <code class="inline-code">z</code> (lowercase).
+      </p>
+
+      <p class="paragraph">
+        You can use most Unicode letters such as <code class="inline-code">å</code> and <code class="inline-code">ü</code> in identifiers. (For more details, see the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#identifiers">lexical grammar</a> reference.) You can also use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#string_literals">Unicode escape sequences</a> to represent characters in identifiers.
+      </p>
+
+      <p class="paragraph">
+        Some examples of legal names are:
+      </p>
+
+      <ul class="list">
+
+        <li class="list__item"><code class="inline-code">Number_hits</code></li>
+        <li class="list__item"><code class="inline-code">temp99</code></li>
+        <li class="list__item"><code class="inline-code">$credit</code></li>
+        <li class="list__item"><code class="inline-code">_name</code></li>
+        
+      </ul>
+
     </section>
 
+    <!-- Section Five -->
     <section id="header_text" class="main-section">
-      <header></header>
-      <p></p>
-      <p></p>
-      <code></code>
-      <li>
-        <a href="" class="nav-link"></a>
-      </li>
+      <header>
+        <h1 class="main-heading-section">Declaring variables</h1>
+      </header>
+
+      <p class="paragraph">
+        You can declare a variable in two ways:
+      </p>
+
+      <ul class="list">
+
+        <li class="list__item">
+          With the keyword <strong>var</strong>. For example, <code class="inline-code">var x = 42</code>. This syntax can be used to declare both local and global variables, depending on the execution context.
+        </li>
+
+        <li class="list__item">
+          With the keyword <strong>const</strong> or <strong>let</strong>. For example, <code class="inline-code">let y = 13</code>. This syntax can be used to declare a block-scope local variable. (See <a href="">Variable scope</a> below.)
+        </li>
+
+      </ul>
+
+      <p class="paragraph">
+        You can declare variables to unpack values using the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">destructuring assignment</a> syntax. For example, <code class="inline-code">const { bar } = foo</code>. This will create a variable named bar and assign to it the value corresponding to the key of the same name from our object <code class="inline-code">foo</code>.
+      </p>
+
+      <p class="paragraph">
+        Variables should always be declared before they are used. JavaScript used to allow assigning to undeclared variables, which creates an undeclared global variable. This is an error in strict mode and should be avoided altogether.
+      </p>
+
     </section>
 
+    <!-- Section Six -->
     <section id="header_text" class="main-section">
-      <header></header>
-      <p></p>
-      <p></p>
-      <code></code>
-      <li>
-        <a href="" class="nav-link"></a>
-      </li>
+      <header>
+        <h1 class="main-heading-section">Declaration and initialization</h1>
+      </header>
+
+      <p class="paragraph">
+        In a statement like <code class="inline-code">let x = 42</code>, the <code class="inline-code">let x</code> part is called a declaration, and the <code class="inline-code">= 42</code> part is called an initializer. The declaration allows the variable to be accessed later in code without throwing a ReferenceError, while the initializer assigns a value to the variable. In <code class="inline">var</code> and <code class="inline-code">let</code> declarations, the initializer is optional. If a variable is declared without an initializer, it is assigned the value undefined.
+      </p>
+
+      <code class="block-code">
+        let x; <br>
+        console.log(x); // logs "undefined"
+      </code>
+
+      <p class="paragraph">
+        In essence, <code class="inline-code">let x = 42</code> is equivalent to <code class="inline-code">let x; x = 42</code>.
+      </p>
+
+      <p class="paragraph">
+        <code class="inline-code">const</code> declarations always need an initializer, because they forbid any kind of assignment after declaration, and implicitly initializing it with <code class="inline-code">undefined</code> is likely a programmer mistake.
+      </p>
+
+      <code class="block-code">
+        const x; // SyntaxError: Missing initializer in const declaration
+      </code>
+
     </section>
 
   </main>
