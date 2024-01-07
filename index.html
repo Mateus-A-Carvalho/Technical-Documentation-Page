@@ -332,9 +332,7 @@
         The above examples will be interpreted the same as:
       </p>
       
-    </section>
-    
-    <code class="block-code">
+      <code class="block-code">
       var x; <br>
       console.log(x === undefined); // true <br>
       x = 3; <br>
@@ -366,7 +364,30 @@
       Unlike <code class="inline-code">var</code> declarations, which only hoist the declaration but not its value, function declarations are hoisted entirely — you can safely call the function anywhere in its scope. See the hoisting glossary entry for more discussion.
     </p>
 
-  </main>
+  </section>
+
+    <!-- Section Nine -->
+  <section id="header_text" class="main-section">
+      <header>
+        <h1 class="main-heading-section">Global variables</h1>
+      </header>
+
+      <p class="paragraph">
+        Global variables are in fact properties of the <em>global object</em>.
+      </p>
+
+      <p class="paragraph">
+        In web pages, the global object is window, so you can set and access global variables using the <code class="inline-code">window.variable</code> syntax. In all environments, you can use the globalThis variable (which itself is a global variable) to access global variables.
+      </p>
+
+      <p class="paragraph">
+        Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the <code class="inline-code">window</code> or <code class="inline-code">frame</code> name. For example, if a variable called <code class="inline-code">phoneNumber</code> is declared in a document, you can refer to this variable from an <code class="inline-code">iframe</code> as <code class="inline-code">parent.phoneNumber</code>.
+      </p>
+      
+      
+  </section>
+  
+</main>
 
 </body>
 </html>
