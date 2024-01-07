@@ -307,7 +307,7 @@
     </section>
 
     <!-- Section eight  -->
-  <section id="header_text" class="main-section">
+    <section id="header_text" class="main-section">
 
     <header>
       <h1 class="main-heading-section">Variable hoisting</h1>
@@ -364,10 +364,10 @@
       Unlike <code class="inline-code">var</code> declarations, which only hoist the declaration but not its value, function declarations are hoisted entirely — you can safely call the function anywhere in its scope. See the hoisting glossary entry for more discussion.
     </p>
 
-  </section>
+    </section>
 
     <!-- Section Nine -->
-  <section id="header_text" class="main-section">
+    <section id="header_text" class="main-section">
       <header>
         <h1 class="main-heading-section">Global variables</h1>
       </header>
@@ -385,151 +385,182 @@
       </p>
       
       
-  </section>
+    </section>
 
-  <!-- Section Ten -->
-  <section id="header_text" class="main-section">
+    <!-- Section Ten -->
+    <section id="header_text" class="main-section">
+        <header>
+          <h1 class="main-heading-section">Constants</h1>
+        </header>
+
+        <p class="paragraph">
+          You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as any variable identifier: it must start with a letter, underscore, or dollar sign (<code class="inline-code">$</code>), and can contain alphabetic, numeric, or underscore characters.
+        </p>
+
+        <code class="block-code">
+          const PI = 3.14;
+        </code>
+
+        <p class="paragraph">
+          A constant cannot change value through assignment or be re-declared while the script is running. It must be initialized to a value. The scope rules for constants are the same as those for <code class="inline-code">let</code> block-scope variables.
+        </p>
+
+        <p class="paragraph">
+          You cannot declare a constant with the same name as a function or variable in the same scope. For example:
+        </p>
+
+        <code class="block-code error">
+          // THIS WILL CAUSE AN ERROR <br>
+          function f() {} <br>
+          const f = 5; <br>
+
+          // THIS WILL CAUSE AN ERROR TOO <br>
+          function f() { <br>
+            const g = 5; <br>
+            var g; <br>
+          }
+        </code>
+        
+        <p class="paragraph">
+          However, <code class="inline-code">const</code> only prevents <em>re-assignments</em>, but doesn't prevent <em>mutations</em>. The properties of objects assigned to constants are not protected, so the following statement is executed without problems.
+        </p>
+
+        <code class="block-code error">
+          const MY_OBJECT = { key: "value" }; <br>
+          MY_OBJECT.key = "otherValue";
+        </code>
+
+        <p class="paragraph">
+          Also, the contents of an array are not protected, so the following statement is executed without problems.
+        </p>
+        
+        <code class="block-code error">
+          const MY_ARRAY = ["HTML", "CSS"]; <br>
+          MY_ARRAY.push("JAVASCRIPT"); <br>
+          console.log(MY_ARRAY); // ['HTML', 'CSS', 'JAVASCRIPT'];
+        </code>
+
+    </section> 
+
+    <!-- Section Eleven  -->
+    <section id="header_text" class="main-section">
+
+        <header>
+          <h1 class="main-heading-section">Data structures and types</h1>
+        </header>
+
+        <p class="paragraph">
+          The latest ECMAScript standard defines eight data types:
+        </p>
+        
+        <ul class="list">
+
+          <li class="list__item">
+            Seven data types that are <span class="description" title="In JavaScript, a primitive (primitive value, primitive data type) is data that is not an object and has no methods or properties. There are 7 primitive data types:">primitives</span>:
+
+            <ol class="ol-list">
+
+              <li class="item__ol-list">
+                <strong>Boolean</strong>: <code class="inline-code">true</code> or <code class="inline-code">false</code>;
+              </li>
+
+              <li class="item__ol-list">
+                <strong>Null</strong>: A special keyword denoting a null value. (Because JavaScript is case-sensitive, <code class="inline-code">null</code> is not the same as <code class="inline-code">Null</code>, <code class="inline-code">NULL</code>, or any other variant.);
+              </li>
+
+              <li class="item__ol-list">
+                <strong>Undefined</strong>: A top-level property whose value is not defined;
+              </li>
+
+              <li class="item__ol-list">
+                <strong>Number</strong>: An integer or floating point number. For example: <code class="inline-code">42</code> or <code class="inline-code">3.14159</code>;
+              </li>
+
+              <li class="item__ol-list">
+                <strong>BigInt</strong>: An integer with arbitrary precision. For example: <code class="inline-code">9007199254740992n</code>
+              </li>
+
+              <li class="item__ol-list">
+                <strong>String</strong>: A sequence of characters that represent a text value. For example: <code class="inline-code">"Javascript"</code>.
+              </li>
+
+              <li class="item__ol-list">
+                <strong>Symbol</strong>: A data type whose instances are unique and immutable.
+              </li>
+              
+            </ol>
+
+          </li>
+
+          <li class="list__item">and Object.</li>
+        </ul>
+
+    </section> 
+
+    <!-- Section Twelve -->
+    <section id="header_text" class="main-section">
+        <header>
+          <h1 class="main-heading-section">Data type conversion</h1>
+        </header>
+
+        <p class="paragraph">
+          JavaScript is a <em><a href="https://medium.com/android-news/magic-lies-here-statically-typed-vs-dynamically-typed-languages-d151c7f95e2b">dynamically typed language</a></em>. This means you don't have to specify the data type of a variable when you declare it. It also means that data types are automatically converted as-needed during script execution.
+        </p>
+
+        <p class="paragraph">
+          So, for example, you could define a variable as follows:
+        </p>
+        
+        <code class="block-code">
+          let answer = 42;
+        </code>
+        
+        <p class="paragraph">
+          And later, you could assign the same variable a string value, for example:
+        </p>
+        
+        <code class="block-code">
+          answer = "Thanks for all the fish!";
+        </code>
+
+        <p class="paragraph">
+          Because JavaScript is dynamically typed, this assignment does not cause an error message.
+        </p>
+
+    </section> 
+
+    <!-- Section Thirteen -->
+    <section id="header_text" class="main-section">
       <header>
-        <h1 class="main-heading-section">Constants</h1>
+        <h1 class="main-heading-section">Conditional Statements - if, else, and else if</h1>
       </header>
 
       <p class="paragraph">
-        You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as any variable identifier: it must start with a letter, underscore, or dollar sign (<code class="inline-code">$</code>), and can contain alphabetic, numeric, or underscore characters.
+        Conditionals are code structures used to test if an expression returns true or not. A very common form of conditionals is the if...else statement. Very often when you write code, you want to perform different actions for different decisions. You can use conditional statements in your code to do this. In JavaScript we have the following conditional statements:
       </p>
 
-      <code class="block-code">
-        const PI = 3.14;
-      </code>
-
-      <p class="paragraph">
-        A constant cannot change value through assignment or be re-declared while the script is running. It must be initialized to a value. The scope rules for constants are the same as those for <code class="inline-code">let</code> block-scope variables.
-      </p>
-
-      <p class="paragraph">
-        You cannot declare a constant with the same name as a function or variable in the same scope. For example:
-      </p>
-
-      <code class="block-code error">
-        // THIS WILL CAUSE AN ERROR <br>
-        function f() {} <br>
-        const f = 5; <br>
-
-        // THIS WILL CAUSE AN ERROR TOO <br>
-        function f() { <br>
-          const g = 5; <br>
-          var g; <br>
-        }
-      </code>
-      
-      <p class="paragraph">
-        However, <code class="inline-code">const</code> only prevents <em>re-assignments</em>, but doesn't prevent <em>mutations</em>. The properties of objects assigned to constants are not protected, so the following statement is executed without problems.
-      </p>
-
-      <code class="block-code error">
-        const MY_OBJECT = { key: "value" }; <br>
-        MY_OBJECT.key = "otherValue";
-      </code>
-
-      <p class="paragraph">
-        Also, the contents of an array are not protected, so the following statement is executed without problems.
-      </p>
-      
-      <code class="block-code error">
-        const MY_ARRAY = ["HTML", "CSS"]; <br>
-        MY_ARRAY.push("JAVASCRIPT"); <br>
-        console.log(MY_ARRAY); // ['HTML', 'CSS', 'JAVASCRIPT'];
-      </code>
-
-  </section> 
-
-  <!-- Section Eleven  -->
-  <section id="header_text" class="main-section">
-
-      <header>
-        <h1 class="main-heading-section">Data structures and types</h1>
-      </header>
-
-      <p class="paragraph">
-        The latest ECMAScript standard defines eight data types:
-      </p>
-      
       <ul class="list">
 
         <li class="list__item">
-          Seven data types that are <span class="description" title="In JavaScript, a primitive (primitive value, primitive data type) is data that is not an object and has no methods or properties. There are 7 primitive data types:">primitives</span>:
-
-          <ol class="ol-list">
-
-            <li class="item__ol-list">
-              <strong>Boolean</strong>: <code class="inline-code">true</code> or <code class="inline-code">false</code>;
-            </li>
-
-            <li class="item__ol-list">
-              <strong>Null</strong>: A special keyword denoting a null value. (Because JavaScript is case-sensitive, <code class="inline-code">null</code> is not the same as <code class="inline-code">Null</code>, <code class="inline-code">NULL</code>, or any other variant.);
-            </li>
-
-            <li class="item__ol-list">
-              <strong>Undefined</strong>: A top-level property whose value is not defined;
-            </li>
-
-            <li class="item__ol-list">
-              <strong>Number</strong>: An integer or floating point number. For example: <code class="inline-code">42</code> or <code class="inline-code">3.14159</code>;
-            </li>
-
-            <li class="item__ol-list">
-              <strong>BigInt</strong>: An integer with arbitrary precision. For example: <code class="inline-code">9007199254740992n</code>
-            </li>
-
-            <li class="item__ol-list">
-              <strong>String</strong>: A sequence of characters that represent a text value. For example: <code class="inline-code">"Javascript"</code>.
-            </li>
-
-            <li class="item__ol-list">
-              <strong>Symbol</strong>: A data type whose instances are unique and immutable.
-            </li>
-            
-          </ol>
-
+          Use <code class="inline-code">if</code> to specify a block of code to be executed, if a specified condition is true
         </li>
 
-        <li class="list__item">and Object.</li>
+        <li class="list__item">
+          Use <code class="inline-code">else</code> to specify a block of code to be executed, if the same condition is false
+        </li>
+
+        <li class="list__item">
+          Use else <code class="inline-code">if</code> to specify a new condition to test, if the first condition is false
+        </li>
+
+        <li class="list__item">
+          Use <code class="inline-code">switch</code> to specify many alternative blocks of code to be executed
+        </li>
       </ul>
-
-  </section> 
-
-    <!-- Section Twelve -->
-  <section id="header_text" class="main-section">
-      <header>
-        <h1 class="main-heading-section">Data type conversion</h1>
-      </header>
-
-      <p class="paragraph">
-        JavaScript is a <em><a href="https://medium.com/android-news/magic-lies-here-statically-typed-vs-dynamically-typed-languages-d151c7f95e2b">dynamically typed language</a></em>. This means you don't have to specify the data type of a variable when you declare it. It also means that data types are automatically converted as-needed during script execution.
-      </p>
-
-      <p class="paragraph">
-        So, for example, you could define a variable as follows:
-      </p>
       
-      <code class="block-code">
-        let answer = 42;
-      </code>
-      
-      <p class="paragraph">
-        And later, you could assign the same variable a string value, for example:
-      </p>
-      
-      <code class="block-code">
-        answer = "Thanks for all the fish!";
-      </code>
-
-      <p class="paragraph">
-        Because JavaScript is dynamically typed, this assignment does not cause an error message.
-      </p>
-
-  </section> 
+    </section> 
   
-</main>
+  </main>
 
 </body>
 </html>
