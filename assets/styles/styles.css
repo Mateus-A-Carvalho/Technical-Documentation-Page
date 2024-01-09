@@ -4,10 +4,19 @@
 
 :root {
   --body-font-size: 62.5%;
-  --main-bg: rgba(232, 212, 77, .7);
+  --main-bg: linear-gradient(
+    to right bottom, 
+    #e8d44d, 
+    #ffff99);
 /* 
   
-main-bgc: #E8D44D;
+background-image: linear-gradient(
+  to right bottom, 
+  #e8d44d, 
+  #eddf61, 
+  #f3ea74, 
+  #f9f486, 
+  #ffff99);
 
 heading-font: Roboto condensed;
 p-font: Fira Sans;
@@ -35,7 +44,8 @@ html {
 body {
   height: auto;
   font-size: 1.6rem;
-  background-color: var(--main-bg);
+  background-image: var(--main-bg);
+  background-attachment: fixed;
 }
 
 main.main {
