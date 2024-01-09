@@ -732,6 +732,40 @@
         </p>
         
     </section> 
+    
+    <!--  -->
+    <section id="header_text" class="main-section">
+        <header>
+          <h1 class="main-heading-section">Events</h1>
+        </header>
+
+        <p class="paragraph">
+          Real interactivity on a website requires event handlers. These are code structures that listen for activity in the browser, and run code in response. The most obvious example is handling the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event">click event</a>, which is fired by the browser when you click on something with your mouse. To demonstrate this, enter the following into your console, then click on the current webpage:
+        </p>
+
+        <code class="block-code">
+          document.querySelector("html").addEventListener("click", function () { <br>
+            alert("Ouch! Stop poking me!"); <br>
+          });
+        </code>
+        
+        <p class="paragraph">
+          There are a number of ways to attach an event handler to an element. Here we select the <code class="inline-code">
+            &lt;html&gt;
+          </code> element. We then call its <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">addEventListener()</a> function, passing in the name of the event to listen to <code class="inline-code">('click')</code> and a function to run when the event happens.
+        </p>
+        
+        <p class="paragraph">
+          The function we just passed to <code class="inline-code">addEventListener()</code>ere is called an <em>anonymous function</em>, because it doesn't have a name. There's an alternative way of writing anonymous functions, which we call an arrow function. An arrow function uses <code class="inline-code">() =></code> instead of <code class="inline-code">function ()</code>
+        </p>
+
+        <code class="block-code">
+          document.querySelector("html").addEventListener("click", () => { <br>
+            alert("Ouch! Stop poking me!"); <br>
+          });
+        </code>
+        
+    </section> 
   
   </main>
 
