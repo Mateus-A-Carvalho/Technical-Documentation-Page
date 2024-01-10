@@ -8,19 +8,9 @@
     to right bottom, 
     #e8d44d, 
     #ffff99);
-/* 
-  
-background-image: linear-gradient(
-  to right bottom, 
-  #e8d44d, 
-  #eddf61, 
-  #f3ea74, 
-  #f9f486, 
-  #ffff99);
+  --bdrs: 1rem;
 
-heading-font: Roboto condensed;
-p-font: Fira Sans;
-Nav-bar: Lato;
+/* 
 
 .My-Color-Theme-1-rgba { color: rgba(143, 143, 143, 1); }
 .My-Color-Theme-2-rgba { color: rgba(79, 79, 79, 1); }
@@ -60,7 +50,11 @@ img.js_logo {
 main.main {
   width: 90%;
   margin: 0 auto;
-  min-width: 102.4rem;
+  max-width: 102.4rem;
+}
+
+section.main-section header {
+  margin: 3rem auto 6rem auto;
 }
 
 section.main-section {
@@ -68,12 +62,21 @@ section.main-section {
   margin: 7rem;
   background-color: rgba(19, 19, 19, .85);
   padding: 3.5rem 1.5rem;
+  width: 100%;
+  margin: 7rem auto;
+  border-radius: var(--bdrs);
 }
 
-h1.main-section__heading,
-h2 {
+h1.main-section__heading {
   font-family: 'Roboto condensed', sans-serif;
   font-size: 3em;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+
+h2.example {
+  font-size: 1.8em;
 }
 
 p.paragraph {
@@ -85,5 +88,7 @@ nav.navbar {
   font-family: 'Lato', sans-serif ;
 }
 
-
-
+li.item__ol-list,
+li.list__item {
+  margin: 1.5rem 0;
+}
