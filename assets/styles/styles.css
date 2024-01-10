@@ -60,6 +60,7 @@ img.js_logo {
 main.main {
   width: 90%;
   margin: 0 auto;
+  min-width: 102.4rem;
 }
 
 section.main-section {
