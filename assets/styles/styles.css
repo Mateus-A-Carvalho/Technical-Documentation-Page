@@ -48,6 +48,15 @@ body {
   background-attachment: fixed;
 }
 
+img.js_logo {
+  position: fixed;
+  width: 40%;
+  height: auto;
+  bottom: 10px;
+  right: 10px;
+  z-index: -1;
+}
+
 main.main {
   width: 90%;
   margin: 0 auto;
