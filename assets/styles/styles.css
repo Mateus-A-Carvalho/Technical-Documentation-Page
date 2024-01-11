@@ -84,6 +84,7 @@ h1.main-section__heading {
 
 h2.example {
   font-size: 1.8em;
+  font-family: 'Roboto condensed', sans-serif;
 }
 
 p.paragraph {
@@ -103,4 +104,22 @@ ol {
 li.item__ol-list,
 li.list__item {
   margin: 1.5rem 0;
+}
+
+code {
+  background-color: beige;
+  color: #2b2b2b;
+}
+
+code.inline-code {
+  padding: .3rem 1rem;
+  border-radius: .3rem;
+}
+
+code.block-code {
+  display: block;
+  width: 100%;
+  margin: 10rem auto;
+  padding: 5rem 2rem;
+  border-radius: .3rem;
 }
