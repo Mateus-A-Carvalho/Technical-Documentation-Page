@@ -16,11 +16,7 @@
   
   <nav class="navbar" id="navbar">
     <header class="navBar__header">ECMAscript Documentation</header>
-    <a href="" class="nav-link"></a>
-    <a href="" class="nav-link"></a>
-    <a href="" class="nav-link"></a>
-    <a href="" class="nav-link"></a>
-    <a href="" class="nav-link"></a>
+    
   </nav>
 
   <main class="main" id="main-doc">
@@ -90,7 +86,7 @@
         </p>
 
         <p class="paragraph">
-          However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript to your page for creating a Hello world! example. (Hello world! is the <a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">standard for introductory programming examples.</a>)
+          However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript to your page for creating a Hello world! example. (Hello world! is the <a class="section__link" href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">standard for introductory programming examples.</a>)
         </p>        
 
         <ol class="list">
@@ -136,7 +132,7 @@
       </header>
         <article>
           <p class="paragraph">
-            The heading text changed to <em>Hello world!</em> using JavaScript. You did this by using a function called <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">querySelector()</a> to grab a reference to your heading, and then store it in a variable called <code class="inline-code">myHeading</code>. This is similar to what we did using CSS selectors. When you want to do something to an element, you need to select it first.
+            The heading text changed to <em>Hello world!</em> using JavaScript. You did this by using a function called <a class="section__link" href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">querySelector()</a> to grab a reference to your heading, and then store it in a variable called <code class="inline-code">myHeading</code>. This is similar to what we did using CSS selectors. When you want to do something to an element, you need to select it first.
           </p>
     
           <p class="paragraph">
@@ -155,7 +151,7 @@
 
       <article>
         <p class="paragraph">
-          You use variables as symbolic names for values in your application. The names of variables, called <a href="https://developer.mozilla.org/en-US/docs/Glossary/Identifier">identifiers</a>, conform to certain rules.
+          You use variables as symbolic names for values in your application. The names of variables, called <a class="section__link" href="https://developer.mozilla.org/en-US/docs/Glossary/Identifier">identifiers</a>, conform to certain rules.
         </p>
 
         <p class="paragraph">
@@ -163,7 +159,7 @@
         </p>
 
         <p class="paragraph">
-          You can use most Unicode letters such as <code class="inline-code">å</code> and <code class="inline-code">ü</code> in identifiers. (For more details, see the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#identifiers">lexical grammar</a> reference.) You can also use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#string_literals">Unicode escape sequences</a> to represent characters in identifiers.
+          You can use most Unicode letters such as <code class="inline-code">å</code> and <code class="inline-code">ü</code> in identifiers. (For more details, see the <a class="section__link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#identifiers">lexical grammar</a> reference.) You can also use <a class="section__link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#string_literals">Unicode escape sequences</a> to represent characters in identifiers.
         </p>
 
         <p class="paragraph">
@@ -200,13 +196,13 @@
           </li>
 
           <li class="list__item">
-            With the keyword <strong>const</strong> or <strong>let</strong>. For example, <code class="inline-code">let y = 13</code>. This syntax can be used to declare a block-scope local variable. (See <a href="">Variable scope</a> below.)
+            With the keyword <strong>const</strong> or <strong>let</strong>. For example, <code class="inline-code">let y = 13</code>. This syntax can be used to declare a block-scope local variable. (See <a class="section__link" href="">Variable scope</a> below.)
           </li>
 
         </ul>
         
         <p class="paragraph">
-          You can declare variables to unpack values using the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">destructuring assignment</a> syntax. For example, <code class="inline-code">const { bar } = foo</code>. This will create a variable named bar and assign to it the value corresponding to the key of the same name from our object <code class="inline-code">foo</code>.
+          You can declare variables to unpack values using the <a class="section__link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">destructuring assignment</a> syntax. For example, <code class="inline-code">const { bar } = foo</code>. This will create a variable named bar and assign to it the value corresponding to the key of the same name from our object <code class="inline-code">foo</code>.
         </p>
 
         <p class="paragraph">
@@ -359,7 +355,7 @@
             </p>
         
             <p class="paragraph">
-        Whether <code class="inline-code">let</code> and <code class="inline-code">const</code> are hoisted is a matter of definition debate. Referencing the variable in the block before the variable declaration always results in a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError">ReferenceError</a>, because the variable is in a "temporal dead zone" from the start of the block until the declaration is processed.
+        Whether <code class="inline-code">let</code> and <code class="inline-code">const</code> are hoisted is a matter of definition debate. Referencing the variable in the block before the variable declaration always results in a <a class="section__link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError">ReferenceError</a>, because the variable is in a "temporal dead zone" from the start of the block until the declaration is processed.
             </p>
         
             <code class="block-code">
@@ -514,7 +510,7 @@
 
         <article>
           <p class="paragraph">
-            JavaScript is a <em><a href="https://medium.com/android-news/magic-lies-here-statically-typed-vs-dynamically-typed-languages-d151c7f95e2b">dynamically typed language</a></em>. This means you don't have to specify the data type of a variable when you declare it. It also means that data types are automatically converted as-needed during script execution.
+            JavaScript is a <em><a class="section__link" href="https://medium.com/android-news/magic-lies-here-statically-typed-vs-dynamically-typed-languages-d151c7f95e2b">dynamically typed language</a></em>. This means you don't have to specify the data type of a variable when you declare it. It also means that data types are automatically converted as-needed during script execution.
           </p>
           <p class="paragraph">
             So, for example, you could define a variable as follows:
@@ -724,7 +720,7 @@
             These functions, <code class="inline-code">document.querySelector</code> and <code class="inline-code">alert</code>, are built into the browser.
           </p>
           <p class="paragraph">
-            If you see something which looks like a variable name, but it's followed by parentheses— <code class="inline-code">()</code> —it is likely a function. Functions often take <a href="https://developer.mozilla.org/en-US/docs/Glossary/Argument">arguments</a>: bits of data they need to do their job. Arguments go inside the parentheses, separated by commas if there is more than one argument.
+            If you see something which looks like a variable name, but it's followed by parentheses— <code class="inline-code">()</code> —it is likely a function. Functions often take <a class="section__link" href="https://developer.mozilla.org/en-US/docs/Glossary/Argument">arguments</a>: bits of data they need to do their job. Arguments go inside the parentheses, separated by commas if there is more than one argument.
           </p>
           <p class="paragraph">
             For example, the <code class="inline-code">alert()</code> function makes a pop-up box appear inside the browser window, but we need to give it a string as an argument to tell the function what message to display.
@@ -741,7 +737,7 @@
 
         <article>
           <p class="paragraph">
-            Real interactivity on a website requires event handlers. These are code structures that listen for activity in the browser, and run code in response. The most obvious example is handling the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event">click event</a>, which is fired by the browser when you click on something with your mouse. To demonstrate this, enter the following into your console, then click on the current webpage:
+            Real interactivity on a website requires event handlers. These are code structures that listen for activity in the browser, and run code in response. The most obvious example is handling the <a class="section__link" href="https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event">click event</a>, which is fired by the browser when you click on something with your mouse. To demonstrate this, enter the following into your console, then click on the current webpage:
           </p>
           <code class="block-code">
             document.querySelector("html").addEventListener("click", function () { <br>
@@ -752,7 +748,7 @@
           <p class="paragraph">
             There are a number of ways to attach an event handler to an element. Here we select the <code class="inline-code">
               &lt;html&gt;
-            </code> element. We then call its <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">addEventListener()</a> function, passing in the name of the event to listen to <code class="inline-code">('click')</code> and a function to run when the event happens.
+            </code> element. We then call its <a class="section__link" href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">addEventListener()</a> function, passing in the name of the event to listen to <code class="inline-code">('click')</code> and a function to run when the event happens.
           </p>
           
           <p class="paragraph">

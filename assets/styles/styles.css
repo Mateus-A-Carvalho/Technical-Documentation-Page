@@ -123,3 +123,11 @@ code.block-code {
   padding: 5rem 2rem;
   border-radius: .3rem;
 }
+
+section  a.section__link {
+  color: greenyellow
+}
+
+a:visited {
+  color: rgb(108, 174, 10)
+}
