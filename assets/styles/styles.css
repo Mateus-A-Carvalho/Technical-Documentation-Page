@@ -47,6 +47,13 @@ img.js_logo {
   z-index: -1;
 }
 
+img.hello_world-img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: var(--bdrs);
+}
+
 main.main {
   width: 90%;
   margin: 0 auto;
@@ -60,7 +67,7 @@ section.main-section header {
 section.main-section {
   color: rgba(230,230,230, 1);
   margin: 7rem;
-  background-color: rgba(19, 19, 19, .85);
+  background-color: rgba(19, 19, 19, .95);
   padding: 3.5rem 1.5rem;
   width: 100%;
   margin: 7rem auto;
@@ -86,6 +93,11 @@ p.paragraph {
 
 nav.navbar {
   font-family: 'Lato', sans-serif ;
+}
+
+ul, 
+ol {
+  margin: 2rem auto 5rem auto;
 }
 
 li.item__ol-list,
