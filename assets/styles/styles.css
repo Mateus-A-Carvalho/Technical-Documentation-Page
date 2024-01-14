@@ -17,7 +17,7 @@
   25.9px 30.2px 20.2px rgba(0, 0, 0, 0.107),
   45.3px 52.7px 40.9px rgba(0, 0, 0, 0.118),
   98px 114px 73px rgba(0, 0, 0, 0.14);
-  --black: rgb(43, 43, 43, .9);
+  --black: rgb(43, 43, 43, .99);
 }
 
 * {
@@ -56,8 +56,9 @@ img.hello_world-img {
 
 main.main {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto ;
   max-width: 102.4rem;
+  padding: 8rem 2rem;
 }
 
 section.main-section header {
@@ -66,11 +67,10 @@ section.main-section header {
 
 section.main-section {
   color: rgba(230,230,230, 1);
-  margin: 7rem;
   background-color: rgba(19, 19, 19, .95);
   padding: 3.5rem 1.5rem;
   width: 100%;
-  margin: 7rem auto;
+  margin: 0 auto 7rem auto;
   border-radius: var(--bdrs);
   box-shadow: var(--shadow)
 }
@@ -97,7 +97,7 @@ nav.navbar {
   font-family: 'Lato', sans-serif ;
 }
 
-ul, 
+ul:not(.navbar__list), 
 ol {
   margin: 2rem auto 5rem auto;
 }
@@ -139,7 +139,7 @@ a:visited {
   background-color: var(--black);
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
+  justify-content: start;
   align-items: start;
   padding: 2rem 1rem;
   position: fixed;
@@ -147,4 +147,20 @@ a:visited {
 
 h1.navbar__heading {
   color: #fffffa;
+}
+
+ul.navbar__list {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+li.navbar__item {
+  list-style: none;
+}
+
+a.navbar__link {
+  color: #fffffa;
+  text-decoration: none;
 }
