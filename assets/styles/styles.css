@@ -21,6 +21,12 @@
   --black: rgb(43, 43, 43, .99);
 }
 
+/* Utility Classes */
+.active {
+  display: block;
+}
+/* Utility Classes */
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -152,18 +158,31 @@ a:visited {
   box-shadow: var(--shadow);
 }
 
+img.navbar-JSlogo {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fffffa;
+}
+
 header.navbar__header {
   display: block;
   width: 100%;
 }
 
 h1.navbar__heading {
+  display: none;
   color: #fffffa;
   font-family: 'Raleway' , sans-serif;
   width: 100%;
 }
 
 ul.navbar__list {
+  display: none;
   width: 100%;
   margin: 2rem auto;
   padding: 2rem 1rem;
