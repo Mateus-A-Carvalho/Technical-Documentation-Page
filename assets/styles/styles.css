@@ -167,6 +167,7 @@ img.navbar-JSlogo {
   top: 50%;
   transform: translateY(-50%);
   background-color: #fffffa;
+  cursor: pointer;
 }
 
 header.navbar__header {
@@ -223,3 +224,4 @@ label.label-btn {
   position: absolute;
   right: -23px;
 }
+
