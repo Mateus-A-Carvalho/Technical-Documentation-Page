@@ -25,6 +25,22 @@
 .active {
   display: block;
 }
+
+.navbar.active {
+  width: 20vw;
+}
+
+ul.navbar__list.active {
+  display: block;
+}
+
+label.label-btn {
+  right: -2.5rem;
+}
+
+h1.navbar__heading.active {
+  display: block;
+}
 /* Utility Classes */
 
 * {
@@ -132,7 +148,6 @@ code.block-code {
   padding: 5rem 2rem;
   border-radius: .3rem;
 }
-
 section  a.section__link {
   color: greenyellow
 }
@@ -153,10 +168,10 @@ a:visited {
   position: fixed;
   top: 0;
   left: 0;
-  border-right: 3px solid #c6c6c6;
-  overflow: hidden;
+  border-right: 3px solid #fffffa;
   box-shadow: var(--shadow);
 }
+
 
 img.navbar-JSlogo {
   display: block;
@@ -221,7 +236,7 @@ label.label-btn {
   width: 4.5rem;
   height: 4.5rem;
   display: block;
-  position: relative;
+  position: absolute;
 }
 
 
