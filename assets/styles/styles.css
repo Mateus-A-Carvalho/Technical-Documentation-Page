@@ -214,7 +214,7 @@ ul.navbar__list {
   width: 100%;
   margin: 2rem auto;
   padding: 2rem 1rem;
-  text-align: left;
+  text-align: center;
   overflow-y: scroll;
   transition: transform 500ms;
 }
