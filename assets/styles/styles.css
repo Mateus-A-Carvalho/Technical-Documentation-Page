@@ -160,8 +160,8 @@ a:visited {
 
 img.navbar-JSlogo {
   display: block;
-  width: 45px;
-  height: 45px;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: 100%;
   position: absolute;
   top: 50%;
@@ -169,6 +169,7 @@ img.navbar-JSlogo {
   background-color: #fffffa;
   cursor: pointer;
   object-fit: contain;
+  box-shadow: 0 0 .8rem rgba(255, 255, 255, .3);
 }
 
 header.navbar__header {
@@ -217,12 +218,10 @@ input.toogle-btn {
 }
 
 label.label-btn {
-  display: none;
-  width: 35px;
-  height: 35px;
-  background-color: #c6c6c6;
-  border-radius: 50%;
-  position: absolute;
-  right: -23px;
+  width: 4.5rem;
+  height: 4.5rem;
+  display: block;
+  position: relative;
 }
+
 
