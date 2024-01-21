@@ -244,6 +244,12 @@ a.navbar__link {
   transition: transform 500ms;
 }
 
+a.navbar__link:hover{
+  font-weight: bold;
+  transition: all 250ms;
+  transform: translateX(10px);
+}
+
 input.toogle-btn {
   display: none;
 }
