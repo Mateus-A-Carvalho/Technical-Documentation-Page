@@ -266,4 +266,19 @@ label.label-btn {
   position: absolute;
 }
 
+@media (max-width: 425px) {
+  html {
+    width: auto;
+  }
 
+  body {
+    font-size: 1.4rem;
+    width: auto;
+  }
+
+  main.main#main-doc {
+    width: 90%;
+    margin: 0 auto;
+  }  
+}
+  
