@@ -186,6 +186,11 @@ img.navbar-JSlogo {
   cursor: pointer;
   object-fit: contain;
   box-shadow: 0 0 .8rem rgba(255, 255, 255, .3);
+  transition: background-color 300ms;
+}
+
+img.navbar-JSlogo:hover {
+  background-color: #d4d4cc;
 }
 
 header.navbar__header {
