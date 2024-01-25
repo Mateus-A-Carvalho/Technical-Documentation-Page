@@ -137,8 +137,8 @@ code {
 }
 
 code.inline-code {
-  padding: .3rem 1rem;
-  border-radius: .3rem;
+  padding: .1rem;
+  border-radius: .2rem;
 }
 
 code.block-code {
@@ -266,19 +266,34 @@ label.label-btn {
   position: absolute;
 }
 
-@media (max-width: 425px) {
-  html {
-    width: auto;
-  }
+@media screen and (320px <= width <= 425px) {
 
   body {
     font-size: 1.4rem;
-    width: auto;
+    max-width: 100vw;
+    background-attachment: fixed;
   }
-
+  
   main.main#main-doc {
     width: 90%;
     margin: 0 auto;
   }  
+
+  img.js_logo {
+    position: fixed;
+    width: 40%;
+    height: auto;
+    bottom: 10%;
+    right: 0;
+    z-index: -1;
+  }
+
+  h1.main-section__heading{
+    font-size: 1.7em;
+  }
+
+  nav.navbar{
+    display: none;
+  }
 }
   
