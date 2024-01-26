@@ -134,6 +134,7 @@ li.list__item {
 code {
   background-color: beige;
   color: #2b2b2b;
+  font-size: inherit;
 }
 
 code.inline-code {
@@ -294,6 +295,10 @@ label.label-btn {
 
   nav.navbar{
     display: none;
+  }
+
+  code.block-code{
+    overflow-wrap: break-word;
   }
 }
   
