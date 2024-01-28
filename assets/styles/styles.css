@@ -22,7 +22,7 @@
   --bar-width: 30px;
   --bar-height: 5px;
   --hamburger-gap: 5px;
-  --hamburger-margin: 50%;
+  --hamburger-margin: 20%;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
   --foreground: #2b2b2b;
   --background: #2b2b2b;
@@ -88,8 +88,8 @@ img.hello_world-img {
 
 .hamburger-container {
   position: fixed;
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 label.hamburger-menu {
@@ -285,7 +285,7 @@ label.label-btn {
   position: absolute;
 }
 
-@media screen and (320px <= width <= 425px) {
+@media (max-width: 425px) {
 
   body {
     font-size: 1.4rem;
@@ -326,8 +326,7 @@ label.label-btn {
   /* SIDEBAR MENU SETTINGS */
 
   div.hamburger-container {
-    background-color: #fffffa;
-    border-radius: 50%;
+    background-color: transparent;
   }
 
   .hamburger-menu {
