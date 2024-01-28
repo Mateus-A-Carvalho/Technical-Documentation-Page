@@ -280,6 +280,10 @@ label.label-btn {
     margin: 0 auto;
   }  
 
+  section.main-section header{
+    margin: 3rem auto 3rem auto;
+  }
+
   img.js_logo {
     position: fixed;
     width: 40%;
