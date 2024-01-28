@@ -19,6 +19,14 @@
   45.3px 52.7px 40.9px rgba(0, 0, 0, 0.118),
   98px 114px 73px rgba(0, 0, 0, 0.14);
   --black: rgb(43, 43, 43, .99);
+  --bar-width: 30px;
+  --bar-height: 5px;
+  --hamburger-gap: 5px;
+  --hamburger-margin: 50%;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+  --foreground: #2b2b2b;
+  --background: #2b2b2b;
+  --animation-timing: .2s ease-in-out;
 }
 
 /* Utility Classes */
@@ -76,6 +84,16 @@ img.hello_world-img {
   width: 90%;
   margin: 0 auto;
   border-radius: var(--bdrs);
+}
+
+.hamburger-container {
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+}
+
+label.hamburger-menu {
+  position: absolute;
 }
 
 main.main {
@@ -280,6 +298,10 @@ label.label-btn {
     margin: 0 auto;
   }  
 
+  section.main-section header{
+    margin: 3rem auto;
+  }
+
   img.js_logo {
     position: fixed;
     width: 40%;
@@ -300,5 +322,65 @@ label.label-btn {
   code.block-code{
     overflow-wrap: break-word;
   }
+
+  /* SIDEBAR MENU SETTINGS */
+
+  div.hamburger-container {
+    background-color: #fffffa;
+    border-radius: 50%;
+  }
+
+  .hamburger-menu {
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    cursor: pointer;
+    position: absolute;
+    top: var(--hamburger-margin);
+    left: var(--hamburger-margin);
+  }
+  
+  .hamburger-menu::before,
+  .hamburger-menu::after,
+  .hamburger-menu input {
+    content: '';
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
+    transform-origin: left center;
+    transition:
+      opacity var(--animation-timing), 
+      width var(--animation-timing),
+      rotate var(--animation-timing),
+      translate var(--animation-timing),
+      background-color var(--animation-timing);
+  }
+  
+  .hamburger-menu input {
+    appearance: none;
+    outline: none;
+    pointer-events: none;
+  }
+  
+  .hamburger-menu:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+  }
+  
+  .hamburger-menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+  }
+   
+  .hamburger-menu input:checked {
+    opacity: 0;
+    width: 0;
+  }
+  /* SIDEBAR MENU SETTINGS */
 }
   
