@@ -4,6 +4,16 @@ const navBarJSlogo = document.querySelector('#navbar-JSlogo');
 const navBarHeading = document.querySelector('.navbar__header');
 const navBar = document.querySelector('.navbar');
 const links = document.querySelectorAll('#links')
+const hamburberInput = document.querySelector('#hamburger-input')
+console.log(hamburberInput)
+
+hamburberInput.addEventListener("click", () => {
+  if(hamburberInput.checked) {
+    navBar.style.display = "block";
+  } else {
+    navBar.style.display = "none";
+  }
+})
 
 inputEl.addEventListener("click", () => {
 
