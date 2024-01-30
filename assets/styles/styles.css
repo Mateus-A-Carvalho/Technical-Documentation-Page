@@ -30,8 +30,9 @@
 }
 
 
-.active
 /* UTILITY CLASSES */
+
+/* Used at 1440 resolution */
 .active {
   display: block;
 }
@@ -51,7 +52,6 @@ label.label-btn {
 h1.navbar__heading.active {
   display: block;
 }
-
 
 /* UTILITY CLASSES */
 
@@ -194,6 +194,7 @@ a:visited {
   left: 0;
   border-right: 3px solid #fffffa;
   box-shadow: var(--shadow);
+  transform: scale(1, 1);
   transition: width 500ms;
 }
 
@@ -231,7 +232,7 @@ header.navbar__header.active {
 
 h1.navbar__heading {
   display: block;
-  text-align: left;
+  text-align: center;
   color: #fffffa;
   font-family: 'Raleway' , sans-serif;
   width: 100%;
@@ -328,6 +329,7 @@ label.label-btn {
 
   div.hamburger-container {
     background-color: transparent;
+    z-index: 5;
   }
 
   .hamburger-menu {
@@ -387,22 +389,25 @@ label.label-btn {
   /* NAVBAR SETTINGS */
   nav.navbar#navbar {
     height: 100%;
-    width: 0;
     background-color: var(--black);
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: start;
-    align-items: start;
-    /* padding: 2rem 1rem; */
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* border-right: 3px solid #fffffa; */
-    box-shadow: var(--shadow);
-    transition: width 500ms;
+    transform: scale(0, 0);
+    border: none;
+    transition: transform 500ms;
   }
 
-  img.navbar-JSlogo{
+  nav.navbar#navbar.mobile-active {
+    transform: scale(1, 1); 
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  nav.navbar#navbar.mobile-active > h1.navbar__heading{
+    display: block;
+  }
+
+  img.navbar-JSlogo,
+  label.label-btn{
     display: none;
   }
 
