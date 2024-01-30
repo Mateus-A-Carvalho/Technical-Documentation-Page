@@ -9,9 +9,9 @@ console.log(hamburberInput)
 
 hamburberInput.addEventListener("click", () => {
   if(hamburberInput.checked) {
-    navBar.style.display = "block";
+    navBar.classList.toggle('mobile-active');
   } else {
-    navBar.style.display = "none";
+    navBar.classList.toggle('mobile-active');
   }
 })
 
