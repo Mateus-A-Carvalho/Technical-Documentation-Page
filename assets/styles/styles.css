@@ -29,7 +29,9 @@
   --animation-timing: .2s ease-in-out;
 }
 
-/* Utility Classes */
+
+.active
+/* UTILITY CLASSES */
 .active {
   display: block;
 }
@@ -49,7 +51,9 @@ label.label-btn {
 h1.navbar__heading.active {
   display: block;
 }
-/* Utility Classes */
+
+
+/* UTILITY CLASSES */
 
 * {
   margin: 0;
@@ -70,6 +74,7 @@ body {
   background-attachment: fixed;
 }
 
+/* bgc img */
 img.js_logo {
   position: fixed;
   width: 40%;
@@ -315,15 +320,11 @@ label.label-btn {
     font-size: 1.7em;
   }
 
-  nav.navbar{
-    display: none;
-  }
-
   code.block-code{
     overflow-wrap: break-word;
   }
 
-  /* SIDEBAR MENU SETTINGS */
+  /* RESPONSIVE HAMBURGER MENU SETTINGS */
 
   div.hamburger-container {
     background-color: transparent;
@@ -339,6 +340,7 @@ label.label-btn {
     position: absolute;
     top: var(--hamburger-margin);
     left: var(--hamburger-margin);
+    z-index: 5;
   }
   
   .hamburger-menu::before,
@@ -380,6 +382,30 @@ label.label-btn {
     opacity: 0;
     width: 0;
   }
-  /* SIDEBAR MENU SETTINGS */
+  /* RESPONSIVE HAMBURGER MENU SETTINGS */
+
+  /* NAVBAR SETTINGS */
+  nav.navbar#navbar {
+    height: 100%;
+    width: 0;
+    background-color: var(--black);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    /* padding: 2rem 1rem; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* border-right: 3px solid #fffffa; */
+    box-shadow: var(--shadow);
+    transition: width 500ms;
+  }
+
+  img.navbar-JSlogo{
+    display: none;
+  }
+
+  /* NAVBAR SETTINGS */
 }
   
