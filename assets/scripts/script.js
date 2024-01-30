@@ -5,11 +5,13 @@ const navBarHeading = document.querySelector('.navbar__header');
 const navBar = document.querySelector('.navbar');
 const links = document.querySelectorAll('#links')
 const hamburberInput = document.querySelector('#hamburger-input')
-console.log(hamburberInput)
+const hamburberLabel = document.querySelector('.hamburger-menu')
+console.log(hamburberLabel);
 
 hamburberInput.addEventListener("click", () => {
   if(hamburberInput.checked) {
     navBar.classList.toggle('mobile-active');
+    hamburberLabel.setProperty('--black-foreground', '--white-foreground');
   } else {
     navBar.classList.toggle('mobile-active');
   }

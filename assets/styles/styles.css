@@ -24,8 +24,8 @@
   --hamburger-gap: 5px;
   --hamburger-margin: 20%;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-  --foreground: #2b2b2b;
-  --background: #2b2b2b;
+  --black-foreground: #2b2b2b;
+  --white-foreground: #fffffa;
   --animation-timing: .2s ease-in-out;
 }
 
@@ -351,7 +351,7 @@ label.label-btn {
     content: '';
     width: var(--bar-width);
     height: var(--bar-height);
-    background-color: var(--foreground);
+    background-color: var(--black-foreground);
     border-radius: 9999px;
     transform-origin: left center;
     transition:
@@ -402,8 +402,9 @@ label.label-btn {
     z-index: 1;
   }
 
-  nav.navbar#navbar.mobile-active > h1.navbar__heading{
+  nav.navbar#navbar.mobile-active > header.navbar__header{
     display: block;
+    transform: scale(1, 1);
   }
 
   img.navbar-JSlogo,
