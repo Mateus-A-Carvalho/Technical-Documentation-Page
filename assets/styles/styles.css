@@ -24,8 +24,8 @@
   --hamburger-gap: 5px;
   --hamburger-margin: 20%;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-  --black-foreground: #2b2b2b;
-  --white-foreground: #fffffa;
+  --black-foreground: #fffffa;
+  /* --white-foreground: #fffffa; */
   --animation-timing: .2s ease-in-out;
 }
 
@@ -74,7 +74,7 @@ body {
   background-attachment: fixed;
 }
 
-/* bgc img */
+/* BACKGROUND IMG LOGO */
 img.js_logo {
   position: fixed;
   width: 40%;
@@ -280,16 +280,70 @@ a.navbar__link:hover{
   transform: translateX(10px);
 }
 
-input.toogle-btn {
-  display: none;
+.hamburger-container {
+  background-color: #fffffa;
 }
 
-label.label-btn {
-  width: 4.5rem;
-  height: 4.5rem;
-  display: block;
-  position: absolute;
+/* RESPONSIVE HAMBURGER MENU SETTINGS */
+
+div.hamburger-container {
+  background-color: transparent;
+  z-index: 5;
 }
+
+.hamburger-menu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  cursor: pointer;
+  position: absolute;
+  top: var(--hamburger-margin);
+  left: var(--hamburger-margin);
+  z-index: 5;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: '';
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--black-foreground);
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition:
+    opacity var(--animation-timing), 
+    width var(--animation-timing),
+    rotate var(--animation-timing),
+    translate var(--animation-timing),
+    background-color var(--animation-timing);
+}
+
+.hamburger-menu input {
+  appearance: none;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+  
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+/* RESPONSIVE HAMBURGER MENU SETTINGS */
 
 @media (max-width: 425px) {
 
@@ -325,66 +379,7 @@ label.label-btn {
     overflow-wrap: break-word;
   }
 
-  /* RESPONSIVE HAMBURGER MENU SETTINGS */
 
-  div.hamburger-container {
-    background-color: transparent;
-    z-index: 5;
-  }
-
-  .hamburger-menu {
-    --x-width: calc(var(--hamburger-height) * 1.41421356237);
-    display: flex;
-    flex-flow: column nowrap;
-    gap: var(--hamburger-gap);
-    width: max-content;
-    cursor: pointer;
-    position: absolute;
-    top: var(--hamburger-margin);
-    left: var(--hamburger-margin);
-    z-index: 5;
-  }
-  
-  .hamburger-menu::before,
-  .hamburger-menu::after,
-  .hamburger-menu input {
-    content: '';
-    width: var(--bar-width);
-    height: var(--bar-height);
-    background-color: var(--black-foreground);
-    border-radius: 9999px;
-    transform-origin: left center;
-    transition:
-      opacity var(--animation-timing), 
-      width var(--animation-timing),
-      rotate var(--animation-timing),
-      translate var(--animation-timing),
-      background-color var(--animation-timing);
-  }
-  
-  .hamburger-menu input {
-    appearance: none;
-    outline: none;
-    pointer-events: none;
-  }
-  
-  .hamburger-menu:has(input:checked)::before {
-    rotate: 45deg;
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / -2);
-  }
-  
-  .hamburger-menu:has(input:checked)::after {
-    rotate: -45deg;
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / 2);
-  }
-   
-  .hamburger-menu input:checked {
-    opacity: 0;
-    width: 0;
-  }
-  /* RESPONSIVE HAMBURGER MENU SETTINGS */
 
   /* NAVBAR SETTINGS */
   nav.navbar#navbar {
