@@ -95,7 +95,7 @@ img.hello_world-img {
   position: fixed;
   width: 4rem;
   height: 4rem;
-}
+}    
 
 label.hamburger-menu {
   position: absolute;
@@ -221,6 +221,7 @@ img.navbar-JSlogo:hover {
 header.navbar__header {
   display: block;
   text-align: left;
+  margin-top: 5rem;
   width: 100%;
   transform: scale(0, 1);
   transition: transform 500ms;
@@ -343,6 +344,13 @@ div.hamburger-container {
   opacity: 0;
   width: 0;
 }
+
+.hamburger-menu:hover::before,
+.hamburger-menu:hover::after,
+.hamburger-menu input:hover {
+  background-color: #bbbbb4;
+}
+
 /* RESPONSIVE HAMBURGER MENU SETTINGS */
 
 @media (max-width: 425px) {
