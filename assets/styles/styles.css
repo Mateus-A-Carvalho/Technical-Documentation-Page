@@ -32,7 +32,7 @@
 
 /* UTILITY CLASSES */
 
-/* Used at 1440 resolution */
+/* Used at 1440px resolution */
 .active {
   display: block;
 }
@@ -43,11 +43,16 @@
 
 ul.navbar__list.active {
   display: block;
+  transform: scale(1, 1);
 }
 
-label.label-btn {
-  right: -2.5rem;
+header.navbar__header.active {
+  transform: scale(1, 1);
 }
+
+/* label.label-btn {
+  right: -2.5rem;
+} */
 
 h1.navbar__heading.active {
   display: block;
@@ -222,16 +227,12 @@ img.navbar-JSlogo:hover {
 
 header.navbar__header {
   display: block;
-  text-align: left;
   margin-top: 5rem;
   width: 100%;
   transform: scale(0, 1);
   transition: transform 500ms;
 }
 
-header.navbar__header.active {
-  transform: scale(1, 1);
-}
 
 h1.navbar__heading {
   display: block;
@@ -252,9 +253,9 @@ ul.navbar__list {
   transition: transform 500ms;
 }
 
-ul.navbar__list.active {
-  transform: scale(1, 1);
-}
+/* ul.navbar__list.active {
+  
+} */
 
 ul.navbar__list::-webkit-scrollbar {
   display: none;
@@ -283,9 +284,9 @@ a.navbar__link:hover{
   transform: translateX(10px);
 }
 
-.hamburger-container {
+/* .hamburger-container {
   background-color: #fffffa;
-}
+} */
 
 /* RESPONSIVE HAMBURGER MENU SETTINGS */
 
@@ -365,7 +366,7 @@ div.hamburger-container {
   }
   
   main.main#main-doc {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
   }  
 
@@ -394,18 +395,19 @@ div.hamburger-container {
 /* NAVBAR SETTINGS */
 nav.navbar#navbar {
   height: 100%;
-  width: 0;
+  width: 100vw;
   padding: 0;
-  /* transform: scale(1, 1); */
+  transform: translateX(-425px);
   border: none;
   transition: transform 500ms;
+  box-shadow: none;
+  background-color: #101415;
 }
 
 nav.navbar#navbar.mobile-active {
-  /* transform: scale(1, 1);  */
+  transform: translateX(0);
   width: 100vw;
   height: 100vh;
-  /* z-index: 1; */
 }
 /* 
 nav.navbar#navbar.mobile-active > header.navbar__header{
@@ -417,6 +419,24 @@ nav.navbar#navbar.mobile-active > header.navbar__header{
   position: relative;
   left: -10px;
 }    
+
+label.hamburger-menu {
+  position: fixed;
+  left: 8px;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  background-color: #2b2b2b;
+}
+
+.hamburger-menu.mobile-active::before,
+.hamburger-menu.mobile-active::after,
+.hamburger-menu.mobile-active input {
+  background-color: #fffffa;
+}
+
 
 /* NAVBAR SETTINGS */
 }

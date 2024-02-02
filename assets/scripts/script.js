@@ -48,6 +48,8 @@ function mobileFeatureMenu(media) {
   inputEl.addEventListener("click", () => {
     if(media.matches && inputEl.checked){
       navBar.classList.toggle('mobile-active');
+      inputEl.classList.toggle('mobile-active');
+      inputEl.classList.toggle('mobile-active');
     } else {
       navBar.classList.toggle('mobile-active');
     }
