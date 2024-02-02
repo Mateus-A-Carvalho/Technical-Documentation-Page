@@ -1,6 +1,5 @@
 const inputEl = document.querySelector('#toogle-btn');
 const ulNavBarEl = document.querySelector('.navbar__list');
-// const navBarJSlogo = document.querySelector('#navbar-JSlogo');
 const navBarHeading = document.querySelector('.navbar__header');
 const navBar = document.querySelector('.navbar');
 const links = document.querySelectorAll('#links')
@@ -42,8 +41,6 @@ links.forEach(links => {
 })
 
 mobileFeatureMenu(mediaQueryMobile);
-// Problem related: navbar doesn't close when links are clicked;(solved)
-// Problem related: class 'active' continues being added when click are triggred;
 function mobileFeatureMenu(media) {
   inputEl.addEventListener("click", () => {
     if(media.matches && inputEl.checked){

@@ -25,7 +25,7 @@
   --hamburger-margin: 20%;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
   --black-foreground: #fffffa;
-  /* --white-foreground: #fffffa; */
+  --white-foreground: #fffffa;
   --animation-timing: .2s ease-in-out;
 }
 
@@ -431,13 +431,11 @@ label.hamburger-menu {
   background-color: #2b2b2b;
 }
 
-.hamburger-menu.mobile-active::before,
-.hamburger-menu.mobile-active::after,
-.hamburger-menu.mobile-active input {
-  background-color: #fffffa;
+.hamburger-menu:hover::before,
+.hamburger-menu:hover::after,
+.hamburger-menu input:hover {
+  background-color: #2b2b2b;
 }
-
-
 /* NAVBAR SETTINGS */
-}
   
+}
