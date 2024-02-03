@@ -19,10 +19,10 @@ Check the project in this link:  **[Project Preview](https://mateus-a-carvalho.g
 ![Desktop responsive menu working](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/desktop-working-menu.gif)
 
 #### Mobile Preview: 
-![Mobile Preview](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/mobile_view.png)
+<div align="center">![Mobile Preview](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/mobile_view.png)</div>
 
 #### Mobile Menu Working:
-![Mobile responsive menu working](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/menu-working-mobile.gif)
+<div align="center">![Mobile responsive menu working](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/menu-working-mobile.gif)</div>
 
 ### 📋 Prerequisites
 
