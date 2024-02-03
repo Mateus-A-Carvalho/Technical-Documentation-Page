@@ -22,7 +22,12 @@ Check the project in this link:  **[Project Preview](https://mateus-a-carvalho.g
 <div align="center">![Mobile Preview](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/mobile_view.png)</div>
 
 #### Mobile Menu Working:
-<div align="center">![Mobile responsive menu working](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/menu-working-mobile.gif)</div>
+<div style="display: flex; justify-content: center; align-items: center;">
+![Mobile responsive menu working](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/menu-working-mobile.gif)
+</div>
+
+
+
 
 ### 📋 Prerequisites
 
