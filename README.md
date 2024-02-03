@@ -19,12 +19,11 @@ Check the project in this link:  **[Project Preview](https://mateus-a-carvalho.g
 ![Desktop responsive menu working](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/desktop-working-menu.gif)
 
 #### Mobile Preview: 
-<div align="center">![Mobile Preview](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/mobile_view.png)</div>
+![Mobile Preview](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/mobile_view.png)
 
 #### Mobile Menu Working:
-<div style="display: flex; justify-content: center; align-items: center;">
 ![Mobile responsive menu working](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/menu-working-mobile.gif)
-</div>
+
 
 
 
