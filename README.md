@@ -1,3 +1,4 @@
+![FreeCodeCamp Logo](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/FreeCodeCamp_logo.png)
 # Technical Documentation Page
 
 This is my solution to third project of Responsive Web Design Certification at [FreeCodeCamp](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
@@ -12,9 +13,16 @@ Check the project in this link:  **[Project Preview](https://mateus-a-carvalho.g
 
 ### Project Preview
 
-#### Desktop Menu Working
+#### Desktop Preview:
+![Desktop Preview](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/desktop_view.png)
+#### Desktop Menu Working:
+![Desktop responsive menu working](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/desktop-working-menu.gif)
 
-#### Mobile Menu Working
+#### Mobile Preview: 
+![Mobile Preview](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/mobile_view.png)
+
+#### Mobile Menu Working:
+![Mobile responsive menu working](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/menu-working-mobile.gif)
 
 ### 📋 Prerequisites
 
