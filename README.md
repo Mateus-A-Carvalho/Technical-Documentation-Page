@@ -5,7 +5,7 @@ This is my solution to third project of Responsive Web Design Certification at [
 
 ## 🚀 Starting
 
-This project is a technical documentation page, following the requirements of Responsive Web Design certification at Freecodecamp Website. I built it in HTML, CSS and used Javascript to add some features related to responsive hamburger menu. 
+This project is a technical documentation page, following the requirements of Responsive Web Design certification at Freecodecamp Website. I built it in HTML, CSS and used Javascript to add some features related to responsive hamburger menu. Here is the **[documentation](https://github.com/Mateus-A-Carvalho/responsive-hamburger-menu/tree/main)** of this hamburger menu that I made explaining each part of code. 
 
 In this project I used a responsive hamburger menu learned by [this video](https://www.youtube.com/watch?v=dAIVbLrAb_U&t=1082s)
 
@@ -23,10 +23,6 @@ Check the project in this link:  **[Project Preview](https://mateus-a-carvalho.g
 
 #### Mobile Menu Working:
 ![Mobile responsive menu working](https://github.com/Mateus-A-Carvalho/Technical-Documentation-Page/blob/main/assets/public/menu-working-mobile.gif)
-
-
-
-
 
 ### 📋 Prerequisites
 
